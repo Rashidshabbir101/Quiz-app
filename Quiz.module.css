@@ -1,0 +1,121 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.quizContainer {
+  font-family: 'Poppins', sans-serif; 
+  background-color: #ffffff; 
+  padding: 20px;
+  max-width: 400px;
+  margin:  auto; 
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #eee; 
+  margin-bottom: 20px;
+}
+
+.questionContainer {
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #555; 
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  label:hover {
+    background-color: #e6e6e6;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+li {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9; 
+  border-radius: 9px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+ cursor: pointer;
+  background-color: #e6e6e6; /* Darker gray when hovered for interactivity */
+}
+
+.nextButton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nextButton:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+.progressContainer {
+  margin-top: 20px;
+  text-align: center; /* Center align the progress text */
+  font-weight: 600;
+  color: #333; /* Match the color of other text elements */
+}
+/* Quiz.module.css */
+
+.correct {
+    background-color: #d4edda; /* Light green background for correct answer */
+    border: 1px solid #c3e6cb; /* Green border for correct answer */
+  }
+  
+  .wrong {
+    background-color: #f8d7da; /* Light red background for wrong answer */
+    border: 1px solid #f5c6cb; /* Red border for wrong answer */
+  }
+  .correct label,
+  .wrong label {
+    font-weight: bold; /* Optional: make the text bold for visibility */
+  }  
